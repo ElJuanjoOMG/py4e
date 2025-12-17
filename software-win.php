@@ -1,91 +1,75 @@
 <?php include("top.php"); ?>
 <?php include("nav.php"); ?>
-<h1>Installing Python 3 On Windows 10</h1>
-<p><b>Note:</b> Any reasonably recent version of Python is acceptible for this course.
-If you have a verison of Python 3.x on your computer already you should be able to use it for this class.
+<h1>Instalando Python 3 En Windows 10</h1>
+<p><b>Nota:</b> Cualquier version reciente rezonable de Python es aceptable para este curso.
+Si usted tiene una version de Python 3.x en su computadora deberia poder usarla para esta clase.
 </p>
-<p>Please download and install Python 3.x from:</p>
+<p>Por favor, descargue e instale Python 3.x desde:</p>
 <p><a href="http://www.python.org/download/" target="_blank">http://www.python.org/download/</a></p>
-<p>As you install Python, make sure to check the "Add Python 3.5 to PATH" so that you can 
-type <b>python</b> at the command line prompt to run Python.
+<p>Luego de instalar Python, asegurate de marcar "Add Python 3.5 to PATH" para que puedas escribir <b>python</b> en el símbolo del sistema para ejecutar Python.
 </p>
-<b>Installing the Atom Text Editor</b>
-<p>Please download and install Atom from this site:
+<b>Instalando Atom Text Editor</b>
+<p>Descargue e instale Atom desde este sitio:
 </p>
 <p><a href="http://atom.io" target="_blank">http://atom.io</a>
 
-<h1>Writing a Python 3 program with Atom on Windows-10</h1>
+<h1>Escribiendo un programa de Python 3 con Atom en Windows-10</h1>
 <p>
-We have a short 
+Tenemos un video paso por paso
 <a href="https://www.youtube.com/watch?v=uZbaYeYGYRQ&index=1&list=PLlRFEj9H3Oj7Bp8-DfGpfAfDBiblRfl5p" target="_blank">
-step-by-step video</a> showing how to install Python 3 and Atom and write your first program.
+</a> enseñando como instalar Python 3 y Atom y escribir su primer programa.
 <p>
-<h1>Windows Command Line Notes</h1>
+<h1>Notas del la línea de comandos (Command Line) de Windows</h1>
 <p>
-When the command line starts <b style="color:black;background-color:#a0ffff">up</b>, you are in your "home" directory.  Your home directory 
-is different for each of the operating systems.  
-In each of these examples, your logged in account should be used instead of csev.
+Cuando la Simbolo de Sistema (Command Line) <b style="color:black;background-color:#a0ffff">inicia</b>, estaras en tu directorio de "Inicio". Su directorio de inicio es diferente para cada uno de los sistemas operativos.
+En cada uno de estos ejemplos, se debe utilizar su cuenta iniciada en lugar de csev.
 <pre>
-    Windows XP:             C:\Documents and Settings\csev
-    Windows Vista:          C:\Users\csev
-    Windows 7:              C:\Users\csev
-    Windows 10:             C:\Users\csev
+    Windows XP:             C:\Documentos y Ajustes\csev
+    Windows Vista:          C:\Usuarios\csev
+    Windows 7:              C:\Usuarios\csev
+    Windows 10:             C:\Usuarios\csev
 </pre>
-The command line prompt usually includes some clue as to 
-where you are in the folder structure on your hard drive.
-<p>
-If you want to really figure out where you are, use the cd command with no parameters
+El símbolo del sistema (Command Line) generalmente incluye alguna pista sobre 
+dónde se encuentra en la estructura de carpetas de su disco duro.
+<p>Si realmente quieres saber dónde estás, utiliza el comando cd sin parámetros:
 <pre>
     C:\Users\csev> cd
     C:\Users\csev
 </pre>
 <p>
-Where can you go?
+¿A donde puedes ir?
 </p>
 <p>
-Generally the first thing you want to do when you open a command line 
-interface is to navigate to the right folder.  Say you wanted to run a 
-file from your desktop.   The command is <b>cd Desktop</b> to get into the 
-folder that is your Desktop.  You can use the <b>dir</b> command to see 
-which files are in the current directory and the 
-<b>cd ..</b> command to go "<b style="color:black;background-color:#a0ffff">up</b>" a directory
+Generalmente, lo primero que se debe hacer al abrir una interfaz de Simbolo de Sistema (Command Line) es navegar a la carpeta correcta. Supongamos que se desea ejecutar un archivo desde el escritorio.
+   El comando es <b>cd Desktop</b> para entrar a la carpeta que es tu Escritorio.  Puedes usar el comando <b>dir</b> para ver cuales archivos estan en el directorio y el comando <b>cd ..</b> para ir "<b style="color:black;background-color:#a0ffff">arriba</b>" en el directorio
 </p>
 <p> 
-<b>Nifty Trick:</b>  On the cd command, you can partially type a folder name like
-Desktop and then press the TAB key and the system will auto-complete the folder name 
-if you have typed enough that the system can accurately guess what you mean to type.
+<b>Truco ingenioso:</b>  En el comando cd, puede escribir parcialmente el nombre de una carpeta, como Escritorio, y luego presionar la tecla TAB y el sistema completará automáticamente el nombre de la carpeta si ha escrito lo suficiente para que el sistema pueda adivinar con precisión lo que desea escribir.
 <p>
-If you get Lost...
+Si te perdiste...
 <p>
-If you can't figure out what folder you are in and/or cannot figure out how 
-to get to the folder you want to get to - simply close and re-open 
-the Command Line / Terminal window.  You will be back to 
-your "home" directory - so you can start from a known location.
+Si no sabe en qué carpeta se encuentra y/o cómo acceder a la carpeta deseada, simplemente cierre y vuelva a abrir la ventana del símbolo del sistema (Command Line) o la terminal. Volverá a su directorio de "inicio", por lo que podrá empezar desde una ubicación conocida.
 <p>
-Some Cool Hints on the Windows Command Line Interface
+Algunos consejos interesantes sobre la interfaz del símbolo del sistema (Command Line) de Windows
 <p>
-If you click on the little icon in the upper-left of the command prompt window 
-and select Preferences - you can set many things about the command line - probably 
-the most important is to set the Command History Buffer Size to be 999.
+Si hace clic en el pequeño ícono ubicado en la esquina superior izquierda de la ventana del símbolo del sistema y selecciona Preferencias, puede configurar muchas cosas sobre la línea de comando; probablemente la más importante sea configurar el tamaño del búfer del historial de comandos en 999.
 <p>
-<h1>Running Your Python Program in the Command Line</h1>
+<h1>Ejecutando su programa Python en el símbolo del sistema (Command Line)</h1>
 <p>
-To run your program in the command line you type at the command line prompt.
-Windows knows that files wthat end with a ".py" suffix are Python programs.
+Para ejecutar su programa en la línea de comandos, escriba en el símbolo del sistema. Windows reconoce que los archivos que terminan con el sufijo ".py" son programas Python.
 <pre>
     python firstprog.py
 </pre>
 or
 <pre>
-    firstprog.py
+    
 </pre>
-Where firstprog.py is the name of the file containing your Python program.  
-Make sure to use the cd command to be in the correct directory that contains your program file(s).
+Donde firstprog.py es el nombre del archivo que contiene tu programa de Python.  
+Asegurate de que usas el comando cd para estar en el directorio correcto que contenga(n) tu(s) archivo(s) del programa(s)correct directory that contains your program file(s).
 </p>
 <p> 
-You can run your program over and over again in the command window.  
-Hint:  You can use the <b style="color:black;background-color:#a0ffff">up</b>-arrow key to scroll back through previous 
-commands and re-execute them by pressing enter.  This allows you to quickly 
-edit and rerun your program to make and test changes.
+Puede ejecutar su programa repetidamente en la ventana de comandos.  
+Consejo: Puede usar la flecha <b style="color:black;background-color:#a0ffff">arriba</b>-para retroceder en los comandos anteriores y volver a ejecutarlos presionando Intro. Esto le permite editar y volver a ejecutar su programa rápidamente para realizar cambios y probarlos.
 </p>
 <?php include('footer.php');?>
+  
